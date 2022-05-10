@@ -92,7 +92,7 @@ main{
     display: flex;
     width: 236px;
     height: 342px;
-    padding: 16px;
+    padding: 14px;
     flex-direction: column;
     align-items: center;
     border: .5px solid rgba(153, 153, 153, 0.3);
@@ -106,14 +106,14 @@ main{
     right: 12px;
 }
 
-.feed__follow-recomendation_pfp{
+.follow-recomendation_pfp{
     width: 88px;
     height: 88px;
     margin-top: 2px;
     border-radius: 75px;
 }
 
-.feed__follow-recomendation_username{
+.follow-recomendation_username{
     margin-top: 8px;
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -121,23 +121,23 @@ main{
     color: var(--primary-font-color);
 }
 
-.feed__follow-recomendation_name{
-    margin-top: 6px;
+.follow-recomendation_name{
+    margin-top: 4px;
     font-size: 1.35rem;
     font-weight: 400;
     color: #8E8E8E;
 }
 
-.feed__follow-recomendation_posts_container{
+.follow-recomendation_posts_container{
     display: flex;
     width: 131px;
     height: 78px;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 8px;
+    margin-top: 12px;
 }
 
-.feed__follow-recomendation_post{
+.follow-recomendation_post{
     display: inline-block;
     width: 76px;
     height: 76px;
@@ -148,4 +148,25 @@ main{
 
 .duki{
     background-image: url('../assets/img/duki-post.webp');
+}
+
+.follow-recomendation__followed-by{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-top: 20px;
+    color: #8E8E8E;
+}
+
+.follow-recomendation__follow_button{
+    width: 202px;
+    height: 30px;
+    padding: 5px 9px 5px 9px; /* arriba, derecha, abajo, izquierda */
+    margin-top: 13px;
+    font-size: 1.35rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0095f6;
+    color: #fff;
 }
