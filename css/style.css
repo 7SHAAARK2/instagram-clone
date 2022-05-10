@@ -14,10 +14,13 @@ html{
     font-family: 'Roboto', sans-serif;
 }
 
-
 body{
     width: 100vw;
     height: 100%;
+}
+
+a{
+    text-decoration: none;
 }
 
 header{
@@ -55,6 +58,7 @@ header{
 }
 
 main{
+    height: 803px;
     display: flex;
     flex-direction: column;
     background-color: #fafafa;
@@ -169,4 +173,23 @@ main{
     border-radius: 4px;
     background-color: #0095f6;
     color: #fff;
+}
+
+footer{
+    display: flex;
+    width: 100vw;
+    height: 44px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-top: .5px solid rgba(153, 153, 153, 0.45);
+}
+
+footer a svg, footer a img{
+    width: 24px;
+    height: 24px;
+}
+
+footer a img{
+    border-radius: 50%;
 }
