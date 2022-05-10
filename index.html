@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Instagram</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -17,7 +20,28 @@
         </header>
 
         <main>
+            <div class="main__feed_title">
+                <h1>Welcome to Instagram</h1>
+                <p>When you follow people, you'll see the photos and videos they post here.</p>
+            </div>
 
+            <section class="main__feed_container">
+                <article class="main__feed_follow-recomendation_card">
+                    <svg aria-label="feed_follow-recomendation_dismiss" class="_8-yf5 " color="#8e8e8e" fill="#8e8e8e" height="11" role="img" viewBox="0 0 24 24" width="11"><polyline fill="none" points="20.643 3.357 12 12 3.353 20.647" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></polyline><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" x1="20.649" x2="3.354" y1="20.649" y2="3.354"></line></svg>
+                    
+                    <img alt="Profile picture" src="assets/img/duki.jpg" class="feed__follow-recomendation_pfp">
+                    <h3 class="feed__follow-recomendation_username">duki</h3>
+                    <p class="feed__follow-recomendation_name">Ya Supiste</p>
+
+                    <div class="feed__follow-recomendation_posts_container">
+                        <span class="feed__follow-recomendation_post duki"></span>
+                    </div>
+
+                    
+                </article>
+            </section>
+
+            
         </main>
     </body>
 </html>

@@ -1,3 +1,7 @@
+:root{
+    --primary-font-color: #262626;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,34 +9,143 @@
 }
 
 html{
+    height: 100%;
     font-size: 62.5%;
-    font-family: Helvetica;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    width: 100vw;
+    height: 100%;
 }
 
 header{
     width: 100vw;
-    height: auto;
+    height: 45px;
     border-bottom: .5px solid rgba(153, 153, 153, 0.4);
 }
 
 .header__nav{
-    width: 100%;
-    height: 45px;
     display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 3px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
+.header__nav svg{
+    margin-bottom: 3px;
+}
+
 .header__nav_new-story_icon{
-    margin-right: 27px;
+    margin-right: 36px;
 }
 
 .header__nav_txt_logo{
     width: 103px;
     height: 29px;
+    margin-left: 2px;
 }
 
 .header__nav_msg_icon{
-    margin-left: 27px;
+    margin-left: 36px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+}
+
+.main__feed_title{
+    width: 90%;
+    height: 110px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main__feed_title h1{
+    margin-bottom: 7px;
+    font-size: 2.1rem;
+    font-weight: 300;
+    color: var(--primary-font-color);
+}
+
+.main__feed_title p{
+    font-size: 1.44rem;
+    font-weight: 400;
+    color: #8E8E8E;
+}
+
+.main__feed_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main__feed_follow-recomendation_card{
+    position: relative;
+    display: flex;
+    width: 236px;
+    height: 342px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    border: .5px solid rgba(153, 153, 153, 0.3);
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.main__feed_follow-recomendation_card svg{
+    position: absolute;
+    top: 30px;
+    right: 12px;
+}
+
+.feed__follow-recomendation_pfp{
+    width: 88px;
+    height: 88px;
+    margin-top: 2px;
+    border-radius: 75px;
+}
+
+.feed__follow-recomendation_username{
+    margin-top: 8px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: var(--primary-font-color);
+}
+
+.feed__follow-recomendation_name{
+    margin-top: 6px;
+    font-size: 1.35rem;
+    font-weight: 400;
+    color: #8E8E8E;
+}
+
+.feed__follow-recomendation_posts_container{
+    display: flex;
+    width: 131px;
+    height: 78px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.feed__follow-recomendation_post{
+    display: inline-block;
+    width: 76px;
+    height: 76px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.duki{
+    background-image: url('../assets/img/duki-post.webp');
 }
