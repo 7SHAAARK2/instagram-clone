@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/7SHAAARK2/instagram-clone#readme",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
     "express": "^4.18.1"
   }
 }
