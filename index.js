@@ -9,7 +9,12 @@ app.use('/explore', express.static('./frontend/explore'));
 app.use('/test', express.static('./frontend/test'));
 
 app.get('/p/:postId', (req, res) => {
-    res.send(createPost(posts[req.params.postId]));
+    try{
+        res.send(createPost(posts[req.params.postId]));
+    }
+    catch{
+        res.sendStatus(404);
+    }
 });
 
 app.listen(7272, () => {
@@ -17,7 +22,7 @@ app.listen(7272, () => {
 });
 
 function createPost(info){ /* :pensive: */
-    const content = fs.readFileSync('frontend/post/index.html', 'utf-8').replace('Placeholder Title', info.description)
+    const content = fs.readFileSync('frontend/post/index.html', 'utf-8').replace('Placeholder desc', info.description)
     .replace('<link rel="stylesheet" href="css/style.css">',
     `
     <style>

@@ -58,7 +58,7 @@ main{
     background-color: rgba(250,250,250);
 }
 
-.main__search-tab_post-img{
+.main__explore-tab_post-img{
     width: 104.5px;
     height: 104.5px;
     margin: .9px;
@@ -67,7 +67,7 @@ main{
     background-position: center;
 }
 
-.main__search-tab_big-post{
+.main__explore-tab_big-post{
     width: 211px;
     height: 211px;
 }
@@ -78,6 +78,10 @@ main{
 
 .cat{
     background-image: url('../assets/img/post2.jpg');
+}
+
+.cat2{
+    background-image: url('../assets/img/post3.jpg');
 }
 
 footer{

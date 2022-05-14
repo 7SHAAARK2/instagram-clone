@@ -10,8 +10,69 @@ html{
     font-family: 'Roboto', sans-serif;
 }
 
+header{
+    width: 90%;
+    height: 45px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(219,219,219);
+}
+
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav__go-back_btn{
+    margin: 10px 0 0 0; /* arriba, derecha, abajo, izquierda */
+    transform: rotate(270deg);
+}
+
+.header__nav h1{
+    margin-left: calc(50% - 52px);
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #313131;
+}
+
 body{
     width: 100vw;
     height: 100%;
 }
 
+main{
+    display: flex;
+    width: 100vw;
+    height: 802px;
+    flex-direction: column;
+}
+
+.main__post_card{
+    width: 100vw;
+    height: 565px;
+}
+
+.post__card_header{
+    width: 100%;
+    height: 61px;
+}
+
+footer{
+    display: flex;
+    width: 100vw;
+    height: 44px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-top: .5px solid rgba(153, 153, 153, 0.45);
+}
+
+footer a svg, footer a img{
+    width: 24px;
+    height: 24px;
+}
+
+footer a img{
+    border-radius: 50%;
+}
