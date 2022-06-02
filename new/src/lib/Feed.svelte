@@ -1,11 +1,25 @@
 <script>
     import Post from '$lib/Post.svelte'
 
-    let authorTemplate = {
-        username: 'feli________________'
+    let postDataTemplate = {
+        author: {
+            username: 'feli________________',
+            pfp: 'pfp.webp'
+        },
+        image: 'posts/post.jpg',
+        likes: 658,
+        comments: {
+            quantity: 6,
+            contents: [
+                {
+                    author: 'duki',
+                    content: 'yo'
+                }
+            ] 
+        }
     }
 </script>
 
 <div class="Feed">
-    <Post author={authorTemplate} />
+    <Post data={postDataTemplate} />
 </div>

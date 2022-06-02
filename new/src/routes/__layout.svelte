@@ -13,7 +13,7 @@
     </a>
     <a href="/">
         <!-- svelte-ignore a11y-img-redundant-alt -->
-        <img src="pfp.webp" alt="Your profile picture">
+        <img src="http://localhost:3000/pfp.webp" alt="Your profile picture">
     </a>
 </footer>
 

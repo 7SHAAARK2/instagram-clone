@@ -19,10 +19,13 @@
 </main>
 
 <style>
-    :global(body){
+    :global(*){
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+    }
+
+    :global(body){
         font-family: 'Roboto', sans-serif;
     }
 </style>
