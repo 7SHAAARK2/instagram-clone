@@ -23,6 +23,7 @@
         width: 103px;
         height: 29px;
         margin-left: 2px;
+        margin-top: 2px;
     }
 
     .msg_icon{
