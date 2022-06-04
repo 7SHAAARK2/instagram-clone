@@ -12,9 +12,18 @@
 </script>
 
 <script>
+    import ProfileHeader from '$lib/ProfileHeader.svelte';
     export let username, origin;
 </script>
 
 <div class="Profile">
-    <h1>{username}</h1>
+    <ProfileHeader {username} {origin} />
 </div>
+
+<style>
+    .Profile{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+</style>

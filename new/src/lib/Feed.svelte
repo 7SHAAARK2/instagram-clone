@@ -14,6 +14,10 @@
                 {
                     author: 'duki',
                     content: 'yo'
+                },
+                {
+                    author: 'kendricklamar',
+                    content: 'this shit hard'
                 }
             ] 
         }

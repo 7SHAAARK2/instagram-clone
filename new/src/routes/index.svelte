@@ -25,7 +25,7 @@
         padding: 0;
     }
 
-    :global(body){
+    :global(body,main){
         font-family: 'Roboto', sans-serif;
     }
 </style>
