@@ -1,0 +1,52 @@
+[
+    {
+        "author": {
+            "username": "feli________________",
+            "pfp": "pfp.webp"
+        },
+        "image": "posts/post.jpg",
+        "likes": "34",
+        "description": "mandraina",
+        "comments": {
+            "quantity": "6",
+            "contents": [
+                {
+                    "author": "duki",
+                    "content": "yo"
+                },
+                {
+                    "author": "kendricklamar",
+                    "content": "this shit hard"
+                }
+            ] 
+        },
+        "date": "2 DAYS AGO"
+    },
+    {
+        "author": {
+            "username": "kendric",
+            "pfp": "default.webp"
+        },
+        "image": "posts/post.jpg",
+        "likes": "3,072,708",
+        "description": "Mr. Morale & The Big Steppers.\nShot by @renellaice",
+        "comments": {
+            "quantity": "39,372",
+            "contents": [
+                {
+                    "author": "duki",
+                    "content": "yo"
+                },
+                {
+                    "author": "kanyewest",
+                    "content": "ye"
+                },
+                {
+                    "author": "bigcat123",
+                    "content": "potat"
+                }
+            ] 
+        },
+        "date": "MAY 11"
+    }
+]

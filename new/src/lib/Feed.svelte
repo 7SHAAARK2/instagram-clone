@@ -1,29 +1,16 @@
 <script>
     import Post from '$lib/Post.svelte'
+    import posts from '../data/posts.json';
 
-    let postDataTemplate = {
-        author: {
-            username: 'feli________________',
-            pfp: 'pfp.webp'
-        },
-        image: 'posts/post.jpg',
-        likes: 658,
-        comments: {
-            quantity: 6,
-            contents: [
-                {
-                    author: 'duki',
-                    content: 'yo'
-                },
-                {
-                    author: 'kendricklamar',
-                    content: 'this shit hard'
-                }
-            ] 
-        }
-    }
+    posts.forEach(post => {
+        post.id = btoa(post.author.username + post.image);
+    });
+
+    // console.log(posts[0]);
 </script>
 
 <div class="Feed">
-    <Post data={postDataTemplate} />
+    {#each posts as post}
+        <Post data={post} />
+    {/each}
 </div>
