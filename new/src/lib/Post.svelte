@@ -2,13 +2,14 @@
     export let data;
 </script>
 
-<div class="Post">
+<article class="Post">
     <section class="post__header">
         <!-- <p>{author.username}</p> -->
         <span class="post__header_pfp" style="background-image: url('{data.author.pfp}');"></span>
         <a href="/{data.author.username}/">
             {data.author.username}
         </a>
+        <svg aria-label="More options" class="header__options_icon" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="1.5"></circle><circle cx="6" cy="12" r="1.5"></circle><circle cx="18" cy="12" r="1.5"></circle></svg>
     </section>
     <span class="post__image" style="background-image: url('{data.image}');"></span>
     <section class="post__options-n-comments">
@@ -33,17 +34,23 @@
             <div class="post__comments">
                 <!-- I'll just show the first one -->
                 <p class="post__all_comments">View all {data.comments.contents.length} comments</p>
+                <div class="post__comment">
+                    <a href="/{data.comments.contents[0].author}">{data.comments.contents[0].author}</a>
+                    <span>{data.comments.contents[0].content}</span>
+                </div>
             </div>
         {/if}
     </section>
-</div>
+    <p class="post__date">{data.date}</p>
+</article>
 
 <style>
     .Post{
         display: flex;
         box-sizing: border-box;
         width: 100vw;
-        height: 619px;
+        height: auto;
+        margin-bottom: 5px;
         flex-direction: column;
     }
 
@@ -79,6 +86,12 @@
         color: #262626;
     }
 
+    .header__options_icon{
+        position: absolute;
+        right: 16px;
+        top: 24px;
+    }
+
     .post__image{
         display: inline-block;
         width: 100vw;
@@ -90,7 +103,7 @@
 
     .post__options-n-comments{
         width: 100vw;
-        height: 228px;
+        height: auto;
         padding-left: 16px;
     }
 
@@ -144,10 +157,33 @@
         width: 100%;
         height: auto;
     }
+    
+    .post__comment{
+        margin-top: 3.4px;
+    }
 
     .post__all_comments{
         margin-top: 4px;
         font-size: 14px;
+        color: #8E8E8E;
+    }
+
+    .post__comment a{
+        font-weight: 500;
+    }
+
+    .post__comment a, .post__comments span{
+        font-size: 14px;
+        text-decoration: none;
+        color: #262626;
+    }
+
+    .post__date{
+        margin-top: 10px;
+        margin-bottom: 11px;
+        padding: 0 16px;
+        font-size: 10px;
+        letter-spacing: .2px;
         color: #8E8E8E;
     }
 </style>

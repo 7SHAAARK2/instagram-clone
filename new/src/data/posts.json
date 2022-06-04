@@ -27,19 +27,19 @@
             "username": "kendric",
             "pfp": "default.webp"
         },
-        "image": "posts/post.jpg",
+        "image": "posts/post2.jpg",
         "likes": "3,072,708",
         "description": "Mr. Morale & The Big Steppers.\nShot by @renellaice",
         "comments": {
             "quantity": "39,372",
             "contents": [
                 {
-                    "author": "duki",
-                    "content": "yo"
-                },
-                {
                     "author": "kanyewest",
                     "content": "ye"
+                },
+                {
+                    "author": "duki",
+                    "content": "yo"
                 },
                 {
                     "author": "bigcat123",
