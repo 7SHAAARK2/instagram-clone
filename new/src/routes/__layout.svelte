@@ -28,6 +28,7 @@
         align-items: center;
         background-color: #fff;
         border-top: .5px solid rgba(153, 153, 153, 0.45);
+        z-index: 999;
     }
 
     footer a svg, footer a img{

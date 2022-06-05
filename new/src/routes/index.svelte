@@ -9,13 +9,14 @@
     import Header from '$lib/Header.svelte';
     import Stories from '$lib/Stories.svelte';
     import Feed from '$lib/Feed.svelte';
+    import FollowSuggestions from '$lib/FollowSuggestions.svelte';
 </script>
 
 <main>
     <Header />
     <Stories />
     <Feed />
-    <h1>brr</h1>
+    <FollowSuggestions />
 </main>
 
 <style>
