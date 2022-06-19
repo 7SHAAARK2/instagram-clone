@@ -1,5 +1,5 @@
 <script>
-    import FollowSuggestionCard from "$lib/FollowSuggestionCard.svelte";
+    import FollowSuggestionCard from "$lib/feed/FollowSuggestionCard.svelte";
 </script>
 
 <div class="FollowSuggestions">

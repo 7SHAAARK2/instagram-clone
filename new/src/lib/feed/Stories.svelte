@@ -1,5 +1,5 @@
 <script>
-    import Story from '$lib/Story.svelte';
+    import Story from '$lib/feed/Story.svelte';
 </script>
 
 <div class="Stories">

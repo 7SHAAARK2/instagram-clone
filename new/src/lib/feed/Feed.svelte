@@ -1,6 +1,6 @@
 <script>
-    import Post from '$lib/Post.svelte'
-    import posts from '../data/posts.json';
+    import Post from '$lib/feed/Post.svelte'
+    import posts from '../../data/posts.json';
 
     posts.forEach(post => {
         post.id = btoa(post.author.username + post.image);

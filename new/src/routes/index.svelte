@@ -6,10 +6,10 @@
 </svelte:head>
 
 <script>
-    import Header from '$lib/Header.svelte';
-    import Stories from '$lib/Stories.svelte';
-    import Feed from '$lib/Feed.svelte';
-    import FollowSuggestions from '$lib/FollowSuggestions.svelte';
+    import Header from '$lib/feed/Header.svelte';
+    import Stories from '$lib/feed/Stories.svelte';
+    import Feed from '$lib/feed/Feed.svelte';
+    import FollowSuggestions from '$lib/feed/FollowSuggestions.svelte';
 </script>
 
 <main>
@@ -20,6 +20,12 @@
 </main>
 
 <style>
+    /* I'm having a hard time with setting these styles, i really dont know how to do it or if what im doing even actually works */
+    /* I mean, it does... sometimes, its really confusing */
+
+
+    /* Ok nevermind i think i got it, i wrote the 2 comments above like 15 minutes ago */
+
     :global(*){
         box-sizing: border-box;
         margin: 0;
@@ -27,6 +33,9 @@
     }
 
     :global(body,main){
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
         font-family: 'Roboto', sans-serif;
     }
 </style>
