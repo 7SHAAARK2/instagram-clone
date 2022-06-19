@@ -7,8 +7,6 @@
     {isBig ? 'width: 213px; height: 211px;' : ''}
 "></span>
 
-<!-- nested ternary operators 🥰🥰🥰🥰🥰🥰🥰 -->
-
 <style>
     .Post{
         width: 104.5px;
