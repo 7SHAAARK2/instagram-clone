@@ -3,13 +3,30 @@
 
     export let bigOne = false;
     export let bigOneLeft = false;
+
+    import data from '../../data/posts.json';
+
+    data.forEach(post => {
+        post.id = btoa(post.author.username + post.image);
+    });
 </script>
 
-<div class="PostRow" style="flex-direction:{bigOneLeft ? 'row' : 'row-reverse'};">
+<div class="PostRow" style="flex-direction:{bigOneLeft ? 'row-reverse' : 'row' };">
     {#if bigOne}
-        <h1>{bigOneLeft}</h1>
+        <div class="column">
+            <Post img={data[Math.floor(Math.random() * data.length)].image} />
+            <Post img={data[Math.floor(Math.random() * data.length)].image} />
+        </div>
+
+        <Post isBig={true} img={data[Math.floor(Math.random() * data.length)].image} />
     {:else}
-        <h1>a</h1>
+        <!-- https://stackoverflow.com/questions/58213585/svelte-3-how-to-loop-each-block-x-amount-of-times -->
+        {#each {length: 3} as _, index}
+            <div class="column">
+                <Post img={data[Math.floor(Math.random() * data.length)].image} />
+                <Post img={data[Math.floor(Math.random() * data.length)].image} />
+            </div>
+        {/each}
     {/if}
 </div>
 
@@ -19,6 +36,11 @@
         width: 100%;
         height: 212.66px;
         margin-top: 2px;
-        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .column{
+        display: flex;
+        flex-direction: column;
     }
 </style>
