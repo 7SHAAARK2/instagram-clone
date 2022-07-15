@@ -9,6 +9,7 @@
     data.forEach(post => {
         post.id = btoa(post.author.username + post.image);
     });
+    
 </script>
 
 <div class="PostRow" style="flex-direction:{bigOneLeft ? 'row-reverse' : 'row' };">
@@ -23,8 +24,8 @@
         <!-- https://stackoverflow.com/questions/58213585/svelte-3-how-to-loop-each-block-x-amount-of-times -->
         {#each {length: 3} as _, index}
             <div class="column">
-                <Post img={data[Math.floor(Math.random() * data.length)].image} />
-                <Post img={data[Math.floor(Math.random() * data.length)].image} />
+                <Post img={data[Math.floor(Math.random() * data.length)].image} {bigOneLeft} />
+                <Post img={data[Math.floor(Math.random() * data.length)].image} {bigOneLeft} />
             </div>
         {/each}
     {/if}
@@ -36,7 +37,6 @@
         width: 100%;
         height: 212.66px;
         margin-top: 2px;
-        justify-content: space-between;
     }
 
     .column{

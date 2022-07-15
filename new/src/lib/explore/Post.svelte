@@ -4,13 +4,13 @@
 
 <span class="Post" style="
     background-image: url({img});
-    {isBig ? 'width: 213px; height: 211px;' : ''}
+    {isBig ? 'width: 213.5px; height: 212px;' : ''}
 "></span>
 
 <style>
     .Post{
-        width: 104.5px;
-        height: 104.5px;
+        width: 105px;
+        height: 105px;
         margin: 1px 0 1px 0; /* arriba derecha abajo izquierda */
         background-size: cover;
         background-repeat: no-repeat;
